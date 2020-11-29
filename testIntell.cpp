@@ -6,10 +6,11 @@
 using namespace std;
 
 
+
 void Find_min_value_in_random_array()
 {
     srand(time(0));
-    const int array_size = 200000; // size of array
+    const int array_size = 250000; // size of array
     int array1[array_size]; // create of array
     for (int counter = 0; counter < array_size; counter++)
     {
@@ -23,6 +24,7 @@ void Find_min_value_in_random_array()
          min = array1[counter];
     }
     
+
     cout<<min<<endl;
 }
 void Time_of_work(){
@@ -40,17 +42,12 @@ int main()
     thread thread4(Find_min_value_in_random_array); 
     thread thread5(Find_min_value_in_random_array);
     thread thread6(Find_min_value_in_random_array);
-    thread thread7(Find_min_value_in_random_array);
     thread1.join();
     thread2.join();
     thread3.join();
     thread4.join();
     thread5.join();
-    thread6.join();
-    thread7.join();
-    
-    
-   
+    thread6.join(); 
     Time_of_work();
 
     return 0;

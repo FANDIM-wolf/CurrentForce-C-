@@ -41,11 +41,6 @@ int main()
 {
 	Machine robot;
 	robot.Find_min_value_in_random_array();
-	robot.Find_min_value_in_random_array();
-	robot.Find_min_value_in_random_array();
-	robot.Find_min_value_in_random_array();
-	robot.Find_min_value_in_random_array();
-	robot.Find_min_value_in_random_array();
 	robot.Time_of_work();
 
 	return 0;
